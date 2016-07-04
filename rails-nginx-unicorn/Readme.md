@@ -14,6 +14,7 @@ Easily configure docker for Rails production with Nginx and Unicorn.
 Create a `Dockerfile` at the root of your project and paste the code below. You may make changes as required
 
 ```
+# Dockerfile
 FROM ishouvik/rails-nginx-unicorn:latest
 MAINTAINER Your name <yourname@example.com>
 
@@ -46,6 +47,7 @@ $ docker run -d -p 80:80 -e SECRET_KEY_BASE=yoursecretkey --name yourproject-1
   - Create a `docker-compose.yml` file at the root of your project and paste the following code
 
   ```
+  # docker-compose.yml
   version: '2'
   services:
     web:
@@ -54,6 +56,13 @@ $ docker run -d -p 80:80 -e SECRET_KEY_BASE=yoursecretkey --name yourproject-1
       - "80:80"
       env_file:
         - ./production.env
+  ```
+
+  - Create a `production.env` file at the root of your project and paste all your environment variables such as your `SECRET_KEY_BASE`, database password, etc.
+
+  ```
+  # production.env
+  SECRET_KEY_BASE=yoursecretkey
   ```
 
   - Run `$ docker-compose run`
