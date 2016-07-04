@@ -51,7 +51,7 @@ $ docker run -d -p 80:80 -e SECRET_KEY_BASE=yoursecretkey --name yourproject-1
   version: '2'
   services:
     web:
-      build: --name .
+      build: .
       ports:
       - "80:80"
       env_file:
