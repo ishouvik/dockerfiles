@@ -65,6 +65,6 @@ $ docker run -d -p 80:80 -e SECRET_KEY_BASE=yoursecretkey --name yourproject-1
   SECRET_KEY_BASE=yoursecretkey
   ```
 
-  - Run `$ docker-compose up`
+  - Run `$ docker-compose up -d`
   > Please note: This is a very basic `docker-compose` setup. You can find more information about docker-compose [here](https://docs.docker.com/compose/overview/).
 
