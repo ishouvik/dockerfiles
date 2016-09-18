@@ -1,5 +1,7 @@
 # Rails Nginx Unicorn
 Easily configure docker for Rails production with Nginx and Unicorn.
+[![](https://images.microbadger.com/badges/version/ishouvik/rails-nginx-unicorn.svg)](https://microbadger.com/images/ishouvik/rails-nginx-unicorn "Get your own version badge on microbadger.com")
+
 
 ## Included
 - Nodejs
